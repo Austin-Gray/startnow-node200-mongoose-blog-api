@@ -96,7 +96,7 @@ describe('/api/blogs', function () {
                             expect(err).to.be.null;
                             expect(res).to.have.status(200);
                             expect(res.body._id).to.equal(String(blog._id));
-                            expect(res.body.title).to.not.equal('Helo World');
+                            expect(res.body.title).to.not.equal('Hello World');
                             done();
                         })
                 });
